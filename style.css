@@ -1,10 +1,11 @@
+/* https://coolors.co/97c4a3-9ac2c9-8aa1b1-4a5043-ffcb47 */
 .navegacion {
     position: fixed;
     display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #dadada;
+    background-color: #97C4A3;
     text-align: center;
   }
   
@@ -28,4 +29,6 @@
   h2{
     margin-top: 70px;
   }
-  
+  #info{
+    background-color: #9AC2C9;
+  }
