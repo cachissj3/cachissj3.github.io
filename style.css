@@ -32,3 +32,8 @@
   body{
     background-color: #9AC2C9;
   }
+  #iCarrusel{
+    margin-top: 70px;
+    width: 800px;
+    height: 600px;
+  }
