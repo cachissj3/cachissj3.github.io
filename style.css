@@ -1,39 +1,63 @@
 /* https://coolors.co/97c4a3-9ac2c9-8aa1b1-4a5043-ffcb47 */
 .navegacion {
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #97C4A3;
-    text-align: center;
-  }
-  
-  .navegacion ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .navegacion a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    padding: 1em;
-    transition: background-color 0.2s ease;
-  }
-  h2{
-    margin-top: 70px;
-  }
-  body{
-    background-color: #9AC2C9;
-  }
-  #iCarrusel{
-    margin-top: 70px;
-    width: 800px;
-    height: 600px;
-  }
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #97C4A3;
+  text-align: center;
+  z-index: 1;
+}
+
+.navegacion ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navegacion a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  padding: 1em;
+  transition: background-color 0.2s ease;
+}
+
+h2 {
+  margin-top: 70px;
+}
+
+body {
+  background-color: #9AC2C9;
+}
+
+.Carrusel {
+  margin-top: 70px;
+}
+
+.Carrusel button {
+  background-color: #9AC2C9;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#iCarrusel {
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#bAtras{
+  left: calc(50% - 472px);
+}
+#bAdelante{
+  right: calc(50% - 472px);
+}
