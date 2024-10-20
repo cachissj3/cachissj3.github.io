@@ -17,34 +17,47 @@
         </ul>
     </nav>
     <div class="Carrusel">
-        <button id="bAtras" ><img src="img/atrasFlecha.png" alt=""></button>
+        <button id="bAtras"><img src="img/atrasFlecha.png" alt=""></button>
         <img id="iCarrusel" src="" alt="fCarrusel.jpeg">
-        
+
         <button id="bAdelante"><img src="img/adelanteFlecha.png" alt=""></button>
         <script src="script.js"></script>
     </div>
 
-    <div id="info">
-        <h2>¿Quiénes Somos?</h2>
-        <p>En Sillones Comfort, somos una empresa joven y dinámica dedicada a la fabricación de sillones de alta
-            calidad y diseño innovador. Nuestro equipo está comprometido con la excelencia y la satisfacción del
-            cliente, y
-            nos esforzamos por crear productos que combinen estilo, comodidad y funcionalidad.</p>
-        <h2>¿Qué hacemos?</h2>
-        <p>Nuestra misión es diseñar y fabricar sillones que no solo satisfagan las necesidades de nuestros clientes,
-            sino que también superen sus expectativas. Nos especializamos en: </p>
-        <ul>
-            <li>Diseño personalizado: Trabajamos con nuestros clientes para crear sillones que se adapten a sus
-                necesidades y estilos.</li>
-            <li>Calidad excepcional: Utilizamos materiales de alta calidad y técnicas de fabricación avanzadas para
-                garantizar la durabilidad y comodidad de nuestros productos.</li>
-            <li>Innovación constante: Estamos comprometidos con la investigación y el desarrollo de nuevos diseños y
-                tecnologías para mantenernos a la vanguardia en la industria.</li>
-        </ul>
-        <h2>Visión</h2>
-        <p>Nuestra visión es convertirnos en líderes en la industria de la fabricación de sillones, reconocidos por
-            nuestra calidad, innovación y compromiso con el cliente. Queremos ser la opción preferida para aquellos que
-            buscan sillones de alta calidad y diseño excepcional.</p>
+    <div id="infos">
+        <a href="#info1" class="titulos" onclick="abrirCaja(event)">
+            <h2>¿Quiénes Somos?</h2>
+        </a>
+        <div class="info" id="info1" style="display:none">
+            <p>En Sillones Comfort, somos una empresa joven y dinámica dedicada a la fabricación de sillones de alta
+                calidad y diseño innovador. Nuestro equipo está comprometido con la excelencia y la satisfacción del
+                cliente, y nos esforzamos por crear productos que combinen estilo, comodidad y funcionalidad.</p>
+        </div>
+
+        <a href="#info2" class="titulos" onclick="abrirCaja(event)">
+            <h2>¿Qué hacemos?</h2>
+        </a>
+        <div class="info" id="info2" style="display:none">
+            <p>Nuestra misión es diseñar y fabricar sillones que no solo satisfagan las necesidades de nuestros
+                clientes, sino que también superen sus expectativas. Nos especializamos en: </p>
+            <ul class="lista">
+                <li>Diseño personalizado: Trabajamos con nuestros clientes para crear sillones que se adapten a sus
+                    necesidades y estilos.</li>
+                <li>Calidad excepcional: Utilizamos materiales de alta calidad y técnicas de fabricación avanzadas para
+                    garantizar la durabilidad y comodidad de nuestros productos.</li>
+                <li>Innovación constante: Estamos comprometidos con la investigación y el desarrollo de nuevos diseños y
+                    tecnologías para mantenernos a la vanguardia en la industria.</li>
+            </ul>
+        </div>
+
+        <a href="#info3" class="titulos" onclick="abrirCaja(event)">
+            <h2>Visión</h2>
+        </a>
+        <div class="info" id="info3" style="display:none">
+            <p>Nuestra visión es convertirnos en líderes en la industria de la fabricación de sillones, reconocidos por
+                nuestra calidad, innovación y compromiso con el cliente. Queremos ser la opción preferida para aquellos
+                que buscan sillones de alta calidad y diseño excepcional.</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
