@@ -28,6 +28,13 @@
   transition: background-color 0.2s ease;
 }
 
+.navegacion #logo{
+  width: 80px;
+}
+
+.navegacion img {
+  width: 10px;
+}
 .titulos {
   margin-top: 70px;
   text-align: center;
@@ -57,6 +64,7 @@
 
 body {
   background-color: #8AA1B1;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Carrusel {
@@ -102,4 +110,51 @@ body {
 #bAdelante {
   right: 0;
   z-index: 2;
+}
+
+/*Pagina Sillones*/
+.sillones {
+  margin-top: 70px;
+  background-color: #97C4A3;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sillones img {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.sillones .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sillones h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 300px;
+}
+
+.sillones p {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.contactarse {
+  position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #FFCB47 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
 }

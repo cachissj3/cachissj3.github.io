@@ -1,7 +1,7 @@
 const imagenes = [
   'img/carrusel1.jpeg',
   'img/carrusel2.jpeg',
-  //falta agregar una imagen, con un tamaño similar para que no quede mal
+  'img/carrusel3.jpeg'
 ];
 
 let contador = 0;
