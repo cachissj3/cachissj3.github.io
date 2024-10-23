@@ -185,7 +185,7 @@ input {
   box-sizing: border-box;
   background-color: rgba(196, 195, 195, 0.818);
 }
-.contactarse{
+.contactarse button{
   background-color: #8AA1B1;
   color: #000000;
   border-radius: 25px;
@@ -196,12 +196,12 @@ input {
   margin-left: 5px;
 }
 
-.contactarse :hover {
+.contactarse button:hover {
   background-color: #FFCB47;
   padding: 10px;
   border: none;
 }
-#contacto{
+#contacto {
   display: flex;
   justify-content: center;
   align-items: center;
