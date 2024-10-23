@@ -157,3 +157,87 @@ body {
     cursor: pointer;
     font-size: 1em;
 }
+
+/* pagina contacto  */
+#form{
+  display: flexbox;
+  background-color: #97C4A3;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #8AA1B1;
+  width: 300px;
+  text-align: center;
+ 
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-weight:  bold;
+  margin: 10px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #4A5043;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(196, 195, 195, 0.818);
+}
+button {
+  background-color: #8AA1B1;
+  color: #000000;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #FFCB47;
+  padding: 10px;
+  border: none;
+}
+#contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+#consulta{
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #4A5043;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(196, 195, 195, 0.818);
+}
+.error {
+color: red;
+margin-top: 5px;
+}
+.input-error {
+border-color: red;
+}
+#errores {
+color: red;
+list-style-type: none;
+padding-left: 0;
+}
+#resultado {
+color: #000000;
+font-size: 16px;
+margin-top: 10px;
+}
+#datosIngresados{
+display: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="contacto">
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html"><img src="img/logo.png" alt="" id="logo"></a></li>
+            <li><a href="sillones.html"><img src="img/sillones.png" alt="">Sillones</a></li>
+            <li><a href="contacto.html"><img src="img/contactarse.png" alt="">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="form">
+        <h3>Escribanos para mas informacion</h3>
+        <form id="formulario" novalidate>
+            <div>
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" required maxlength="50">
+                <div class="error" id="nombreError"></div>
+            </div>
+            <div>
+                <label for="telefono"> Numero de telefono</label>
+                <input type="text" id="telefono" name="telefono" required maxlength="10">
+                <div class="error" id="telError"></div>
+            </div>
+            <div>
+                <label for="text">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div>
+                <label for="texto">Escriba su consulta</label>
+                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea> 
+                <div class="error" id="consultaError"></div>
+            </div>
+            <button type="submit">Enviar</button>
+        <ul id="errores"></ul>
+        <div id="resultado"></div> 
+        </form>
+        <div id="datosIngresados">
+            <h2>Datos Ingresados:</h2>
+            <p><strong>Nombre:</strong> <span id="nombreIngresado"></span></p>
+            <p><strong>Telefono:</strong> <span id="telefonoIngresado"></span></p>
+            <p><strong>Correo Electrónico:</strong> <span id="emailIngresado"></span></p>
+            <p><strong>Consulta:</strong> <span id="consultaIngresado"></span></p>
+        </div>
+    </div>
+</body>
+<script src="scriptForm.js"></script>
+</html>
