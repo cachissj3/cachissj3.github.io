@@ -145,7 +145,7 @@ body {
   margin-top: 30px;
 }
 
-.contactarse {
+.contactarse button {
   position: absolute;
     bottom: 10px;
     right: 10px;
@@ -185,7 +185,7 @@ input {
   box-sizing: border-box;
   background-color: rgba(196, 195, 195, 0.818);
 }
-.contactarse button{
+button{
   background-color: #8AA1B1;
   color: #000000;
   border-radius: 25px;
@@ -196,7 +196,7 @@ input {
   margin-left: 5px;
 }
 
-.contactarse button:hover {
+button:hover {
   background-color: #FFCB47;
   padding: 10px;
   border: none;
@@ -240,4 +240,47 @@ margin-top: 10px;
 }
 #datosIngresados{
 display: none;
+}
+
+/* columnas */
+.fila {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+}
+
+.columna {
+  flex: 1; 
+  margin: 10px;
+  text-align: center; 
+  margin-top: 30px;
+  background-color: #97C4A3;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.columna img {
+  width: 80%; 
+  max-width: 200px; 
+  margin-top: 10px;
+}
+
+.columna p {
+  margin-top: 10px;
+}
+h2{
+  margin-top: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+
+#produ{
+  margin-top: 80px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
 }
