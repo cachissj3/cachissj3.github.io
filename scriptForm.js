@@ -38,7 +38,7 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     const emailInput = document.getElementById("email");
     const email = emailInput.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email !== '' && !emailRegex.test(email)) {
+    if (email === '' && !emailRegex.test(email)) {
         hasErrors = true;
         emailInput.classList.add('input-error');
         errorList.innerHTML += '<li>El correo electrónico no es válido.</li>';
@@ -60,16 +60,22 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     
     if (!hasErrors) {
         document.getElementById('resultado').textContent = 'Formulario enviado correctamente.';
-        document.getElementById('nombreIngresado').textContent = nombre;
-        document.getElementById('telefonoIngresado').textContent = telefono;
-        document.getElementById('emailIngresado').textContent = email;
-        document.getElementById('consultaIngresado').textContent = consulta;
-        
+        document.getElementById('datosIngresados').innerHTML = ''; 
+
+        const datos = [
+            { label: 'Nombre', value: nombre },
+            { label: 'Teléfono', value: telefono },
+            { label: 'Correo Electrónico', value: email },
+            { label: 'Consulta', value: consulta }
+        ];
+    
+        datos.forEach(dato => {
+            const p = document.createElement('p');
+            p.innerHTML = `<strong>${dato.label}:</strong> ${dato.value}`;
+            document.getElementById('datosIngresados').appendChild(p);
+        });
+    
         document.getElementById('datosIngresados').style.display = 'block';
-  
-        document.getElementById('formulario').reset();  
-    } else {
-        document.getElementById('resultado').textContent = '';  
-        document.getElementById('datosIngresados').style.display = 'none';
+        document.getElementById('formulario').reset();
     }
   });
